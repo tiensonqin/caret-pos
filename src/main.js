@@ -1,7 +1,5 @@
 import createInputCaret from './input';
-import createEditableCaret from './editable';
 import {
-  isContentEditable,
   getContext,
   isObject,
 } from './utils';
@@ -9,10 +7,6 @@ import {
 export { getOffset } from './utils';
 
 const createCaret = (element, ctx) => {
-  if (isContentEditable(element)) {
-    return createEditableCaret(element, ctx);
-  }
-
   return createInputCaret(element, ctx);
 };
 

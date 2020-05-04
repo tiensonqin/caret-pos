@@ -1,15 +1,4 @@
 /**
- * Check if a DOM Element is content editable
- *
- * @param {Element} element  The DOM element
- *
- * @return {bool} If it is content editable
- */
-export const isContentEditable = (element) => !!(
-  element.contentEditable && element.contentEditable === 'true'
-);
-
-/**
  * Get the context from settings passed in
  *
  * @param {object} settings The settings object
